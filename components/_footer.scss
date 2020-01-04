@@ -1,26 +1,76 @@
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-  }
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
 
-  .footer{
-    background-color: red;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
 
-  
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.logo {
+  background-color: red;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.container-mappa {
+  background-color: salmon;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.mappa {
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.social {
+  background-color: lightblue;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.facebook {
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.instagram {
+  margin: 20px;
+}
+
+.contatti {
+  background-color: seagreen;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.textbox {
+  width: 70%;
+  height: auto;
+  margin: 20px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 20px;
+}
