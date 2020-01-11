@@ -3,6 +3,17 @@
   color: green;
 }
 
+* {
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.titolo {
+  border-radius: 20px;
+}
+
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -42,7 +53,9 @@
       -ms-flex-align: center;
           align-items: center;
   border-radius: 20px;
-  margin: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .mappa {
@@ -86,7 +99,9 @@
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 20px;
-  margin: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .textbox {
@@ -100,7 +115,7 @@
   border-radius: 20px;
 }
 
-.logo1 {
+.logo_contatti {
   background-color: lightgreen;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -110,7 +125,7 @@
   margin: 20px;
 }
 
-.logo2 {
+.social {
   background-color: lightskyblue;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -142,14 +157,27 @@ body {
   margin: auto;
 }
 
-.head{
+.head {
   border-radius: 20px;
   background-color: #F29100;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.testo{
-  border-radius: 20px;
+.descrizione {
   background-color: #A3DBEF;
+  border-radius: 20px;
+}
+
+.testo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.titolo {
+  margin-bottom: 5px;
+  margin-top: 15px;
 }
 
 .arguments {
@@ -157,6 +185,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 20px;
+  margin-top: 20px;
+}
+
+.arguments .barra {
+  background-color: #F29100;
+  border-radius: 10px;
 }
 
 .arguments .text {
@@ -207,28 +242,6 @@ body {
   margin: 10px;
   padding: 10px;
   background-color: white;
-}
-
-.mascotte_title {
-  font-size: 40px;
-  text-align: center;
-}
-
-.mascotte_descrizione {
-  text-align: center;
-}
-
-.animali {
-  padding: 5px;
-}
-
-.a_posizione {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .flex_row {

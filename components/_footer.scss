@@ -32,7 +32,9 @@
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  margin: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .mappa {
@@ -64,7 +66,9 @@
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  margin: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .textbox {
@@ -76,7 +80,7 @@
   border-radius: 20px;
 }
 
-.logo1 {
+.logo_contatti {
   background-color: lightgreen;
   justify-content: center;
   text-align: center;
@@ -84,7 +88,7 @@
   margin: 20px;
 }
 
-.logo2 {
+.social {
   background-color: lightskyblue;
   justify-content: center;
   text-align: center;
@@ -93,7 +97,7 @@
   margin-bottom: 20px;
 }
 
-.align{
+.align {
   align-items: center;
   justify-content: center;
 }
