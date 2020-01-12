@@ -6,6 +6,7 @@
     .barra{
         background-color: #F29100;
         border-radius: 10px;
+        max-height: 15px;
     }
     .text {
         display: flex;
@@ -15,6 +16,8 @@
         display: flex;
         width: 100%;
         position: relative;
+        margin-top: 45px;
+
         .back {
             z-index: -1;
             position: absolute;
@@ -23,23 +26,96 @@
             .white {
                 width: 100%;
                 flex: 1;
-                height: 70%;
+                height: 65%;
             }
             .orange {
-                height: 30%;
+                height: 35%;
                 width: 100%;
                 border-radius: 10px;
                 background-color: orange;
             }
         }
-        .argument {
-            height: 250px;
-            border-radius: 10px;
-            flex: 3;
-            margin: 10px;
-            padding: 10px;
-            background-color: white;
+        .arguments {
+            display: flex;
+            flex: 1;
+            margin-left: 64px;
+            margin-right: 64px;
+            .argument {
+                min-height: 250px;
+                border-radius: 10px;
+                flex: 3;
+                margin: 10px;
+                padding: 10px;
+                background-color: white;
+            }
         }
+
+    }
+    .container-desc {
+        display: flex;
+        width: 100%;
+        position: relative;
+        .desc-arguments {
+            display: flex;
+            flex: 1;
+            margin-left: 64px;
+            margin-right: 64px;
+
+            .argument {
+                min-height: 150px;
+                border-radius: 10px;
+                flex: 3;
+                margin: 10px;
+                padding: 20px;
+                background-color: white;
+                color: $black;
+            }
+        }
+    }
+
+    .download {
+        display: flex;
+        flex-direction: row;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
         
+        .left {
+            background-color: $secondary;
+            min-width: 44px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            margin-right: 10px;
+            height: 75%;
+        }
+        .center {
+            display: flex;
+            flex-direction: row;
+            background-color: $primary;
+            border-radius: 10px;
+            height: 100%;
+            .text {
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .link {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .right {
+            background-color: $secondary;
+            min-width: 44px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            margin-left: 10px;
+            height: 75%;
+
+        }
     }
 }
