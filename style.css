@@ -186,6 +186,21 @@ body {
   margin-top: 15px;
 }
 
+.mascotte_title {
+  font-size: 40px;
+  text-align: center;
+}
+
+.mascotte_descrizione {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.m_img {
+  height: 270px;
+  background-color: #A3DBEF;
+}
+
 .arguments {
   width: 100%;
   -webkit-box-pack: center;

@@ -8,6 +8,7 @@
         "components/_header.scss",
         "components/_footer.scss",
         "components/_content.scss",
+        "components/_mascotte.scss",
         "components/_arguments.scss",
         "layouts/_flex.scss"
     ],
