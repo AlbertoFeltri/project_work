@@ -20,37 +20,41 @@ body {
   margin-right: 15px;
 }
 
-.fa {
-  padding: 20px;
+.footer {
+  height: 400px;
+  /* Add a hover effect if you want */
+  /* Set a specific color for each brand */
+  /* Facebook */
+}
+
+.footer .fa {
+  padding: 10px;
   font-size: 30px;
   width: 50px;
   text-align: center;
   text-decoration: none;
 }
 
-/* Add a hover effect if you want */
-.fa:hover {
+.footer .fa:hover {
   opacity: 0.7;
 }
 
-/* Set a specific color for each brand */
-/* Facebook */
-.fa-facebook {
+.footer .fa-facebook {
   background: #3B5998;
   color: white;
 }
 
-.logo {
+.footer .logo {
   background-color: red;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
   border-radius: 20px;
-  margin: 20px;
+  margin: 10px;
 }
 
-.container-mappa {
+.footer .container-mappa {
   background-color: salmon;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -59,18 +63,29 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
-.mappa {
+.footer .mappa {
   border-radius: 20px;
-  margin: 20px;
+  margin: 10px;
 }
 
-.instagram {
-  background-color: lightblue;
+.footer .facebook {
+  border-radius: 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .instagram {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -78,25 +93,10 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.facebook {
-  border-radius: 20px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: lime;
-}
-
-.contatti {
+.footer .contatti {
   background-color: seagreen;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -105,12 +105,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
-.textbox {
+.footer .textbox {
   width: 70%;
   height: auto;
   margin: 20px;
@@ -121,28 +121,29 @@ body {
   border-radius: 20px;
 }
 
-.logo_contatti {
+.footer .logo_contatti {
   background-color: lightgreen;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
   border-radius: 20px;
-  margin: 20px;
+  margin: 10px;
 }
 
-.social {
+.footer .social {
   background-color: lightskyblue;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
   border-radius: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.align {
+.footer .align {
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -191,13 +192,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 20px;
-  margin-top: 20px;
-}
-
-.arguments .barra {
-  background-color: #F29100;
-  border-radius: 10px;
-  max-height: 15px;
+  margin-bottom: 20px;
 }
 
 .arguments .text {
@@ -207,6 +202,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.arguments .barra {
+  background-color: #F29100;
+  border-radius: 10px;
+  max-height: 15px;
 }
 
 .arguments .container {
@@ -372,6 +373,30 @@ body {
   border-bottom-right-radius: 10px;
   margin-left: 10px;
   height: 75%;
+}
+
+.mascotte {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mascotte .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mascotte .barra {
+  background-color: #F29100;
+  border-radius: 10px;
+  max-height: 15px;
 }
 
 .flex_row {

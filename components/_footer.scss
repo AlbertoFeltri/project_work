@@ -1,103 +1,108 @@
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
+.footer {
+  height: 400px;
 
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-}
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
 
-/* Set a specific color for each brand */
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
 
-/* Facebook */
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
+  /* Set a specific color for each brand */
 
-.logo {
-  background-color: red;
-  justify-content: center;
-  text-align: center;
-  border-radius: 20px;
-  margin: 20px;
-}
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
 
-.container-mappa {
-  background-color: salmon;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 20px;
-}
+  .logo {
+    background-color: red;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px;
+  }
 
-.mappa {
-  border-radius: 20px;
-  margin: 20px;
-}
+  .container-mappa {
+    background-color: salmon;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
 
-.instagram {
-  background-color: lightblue;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+  .mappa {
+    border-radius: 20px;
+    margin: 10px;
+  }
 
-.facebook {
-  border-radius: 20px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  align-items: center;
-  justify-content: center;
-  background-color: lime;
-}
+  .facebook {
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    // margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    // background-color: lime;
+  }
 
-.contatti {
-  background-color: seagreen;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
+  .instagram {
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    // margin-top: 10px;
+    margin-bottom: 10px;
+    
+  }
 
-.textbox {
-  width: 70%;
-  height: auto;
-  margin: 20px;
-  text-align: center;
-  justify-content: center;
-  border-radius: 20px;
-}
+  .contatti {
+    background-color: seagreen;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
 
-.logo_contatti {
-  background-color: lightgreen;
-  justify-content: center;
-  text-align: center;
-  border-radius: 20px;
-  margin: 20px;
-}
+  .textbox {
+    width: 70%;
+    height: auto;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+  }
 
-.social {
-  background-color: lightskyblue;
-  justify-content: center;
-  text-align: center;
-  border-radius: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+  .logo_contatti {
+    background-color: lightgreen;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px;
+  }
 
-.align {
-  align-items: center;
-  justify-content: center;
+  .social {
+    background-color: lightskyblue;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .align {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
 }
