@@ -20,6 +20,69 @@ body {
   margin-right: 15px;
 }
 
+.jumbotron {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/Back.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.jumbotron .hippo {
+  position: absolute;
+  height: 45%;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.jumbotron .hippo img {
+  height: 100%;
+}
+
+.jumbotron .fish {
+  position: absolute;
+}
+
+.jumbotron .fish img {
+  height: 15%;
+  width: 15%;
+}
+
+.jumbotron .right img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.waves {
+  width: 100%;
+}
+
+.waves img {
+  width: 100%;
+}
+
+@-webkit-keyframes move {
+  0% {
+  }
+  100% {
+    bottom: 70%;
+    right: 70%;
+  }
+}
+
+@keyframes move {
+  0% {
+  }
+  100% {
+    bottom: 70%;
+    right: 70%;
+  }
+}
+
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -160,6 +223,7 @@ body {
 
 body {
   padding: 15px;
+  height: 100vh;
 }
 
 .head {
