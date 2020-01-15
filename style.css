@@ -87,10 +87,6 @@ body {
   height: 400px;
 }
 
-.footer .fa-facebook .fa-instagram {
-  zoom: 2;
-}
-
 .footer .logo {
   background-color: #A3DBEF;
   -webkit-box-pack: center;
@@ -120,15 +116,45 @@ body {
   margin: 10px;
 }
 
-.footer .social {
+.footer .primo_riquadro {
   background-color: lightskyblue;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
   border-radius: 20px;
-  margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.footer .secondo_riquadro {
+  background-color: lightgreen;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.footer .seconda_colonna {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.footer .seconda_colonna .icone_social {
+  height: 70%;
+  margin: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer .terza_colonna {
