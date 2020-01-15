@@ -26,7 +26,12 @@
 	}
 	.right {
 		img {
-			transform: rotate(180deg);
+			transform: rotate(200deg);
+		}
+	}
+	.left {
+		img {
+			transform: rotate(20deg);
 		}
 	}
 }
