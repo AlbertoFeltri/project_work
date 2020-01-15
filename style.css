@@ -53,8 +53,13 @@ body {
 }
 
 .jumbotron .right img {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(200deg);
+          transform: rotate(200deg);
+}
+
+.jumbotron .left img {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
 }
 
 .waves {
