@@ -1,29 +1,12 @@
 .footer {
   height: 400px;
 
-  .fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-  }
-
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
-
-  /* Set a specific color for each brand */
-
-  /* Facebook */
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
+  .fa-facebook .fa-instagram{
+    zoom: 2;
   }
 
   .logo {
-    background-color: red;
+    background-color: #A3DBEF;
     justify-content: center;
     text-align: center;
     border-radius: 20px;
@@ -31,7 +14,7 @@
   }
 
   .container-mappa {
-    background-color: salmon;
+    background-color: #F29100;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -45,57 +28,48 @@
     margin: 10px;
   }
 
-  .facebook {
-    border-radius: 20px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    // margin-top: 10px;
-    align-items: center;
-    justify-content: center;
-    // background-color: lime;
-  }
-
-  .instagram {
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    // margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .contatti {
-    background-color: seagreen;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-  }
-
-  .textbox {
-    width: 70%;
-    height: auto;
-    margin: 20px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 20px;
-  }
-
-  .logo_contatti {
-    background-color: lightgreen;
-    justify-content: center;
-    text-align: center;
-    border-radius: 20px;
-    margin: 10px;
-  }
-
   .social {
     background-color: lightskyblue;
     justify-content: center;
     text-align: center;
     border-radius: 20px;
     margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .terza_colonna {
+    background-color: lightcoral;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .textbox {
+    width: 70%;
+    height: auto;
+    margin: 10px;
+    // text-align: center;
+    // justify-content: center;
+    border-radius: 20px;
+  }
+
+  .logo_contatti {
+    background-color: #A3DBEF;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px;
+  }
+
+  .contatti {
+    background-color: #F29100;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-bottom: 10px;
   }
 
