@@ -383,6 +383,23 @@ body {
   margin-right: 64px;
 }
 
+.arguments .container .arguments .card {
+  border-radius: 10px;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
 .arguments .container .arguments .argument {
   min-height: 250px;
   border-radius: 10px;

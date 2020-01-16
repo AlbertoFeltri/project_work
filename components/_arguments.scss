@@ -47,6 +47,19 @@
             margin-left: 64px;
             margin-right: 64px;
 
+            .card {
+                // height: 450px;
+                // width: 400px;
+                border-radius: 10px;
+                flex: 3;
+                margin: 10px;
+                padding: 10px;
+                background-color: white;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
             .argument {
                 min-height: 250px;
                 border-radius: 10px;
