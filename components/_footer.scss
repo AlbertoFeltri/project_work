@@ -1,5 +1,5 @@
 .footer {
-  height: 400px;
+  height: 530px;
 
   .logo {
     background-color: #A3DBEF;
@@ -47,12 +47,6 @@
     margin-right: 10px;
     margin-bottom: 10px;
 
-    .icone_social {
-      height: 70%;
-      margin: 10px;
-      align-items: center;
-      justify-content: center;
-    }
   }
 
   .terza_colonna {
@@ -62,10 +56,14 @@
     border-radius: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+
+    .instagram{
+      border-radius: 20px;
+    }
   }
 
   .textbox {
-    width: 70%;
+    width: 85%;
     height: auto;
     margin: 10px;
     // text-align: center;
