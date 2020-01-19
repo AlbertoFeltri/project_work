@@ -32,6 +32,7 @@ body {
 
 .jumbotron .hippo {
   position: absolute;
+  z-index: 1;
   height: 45%;
   bottom: 0;
   left: 50%;
@@ -44,22 +45,14 @@ body {
 }
 
 .jumbotron .fish {
+  background-image: url("images/FishBlue.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 5%;
+  width: 5%;
   position: absolute;
-}
-
-.jumbotron .fish img {
-  height: 15%;
-  width: 15%;
-}
-
-.jumbotron .right img {
-  -webkit-transform: rotate(200deg);
-          transform: rotate(200deg);
-}
-
-.jumbotron .left img {
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
+  overflow: hidden;
 }
 
 .waves {

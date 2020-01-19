@@ -1,52 +1,46 @@
 .jumbotron {
-	height: 100vh;
-	width: 100%;
-	background-image: url("images/Back.svg");
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	border-radius: 20px;
+    height: 100vh;
+    width: 100%;
+    background-image: url("images/Back.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
 
-	.hippo {
+    .hippo {
 		position: absolute;
-		height: 45%;
-		bottom: 0;
-		left: 50%;
-		transform: translateX(-50%);
-		img {
-			height: 100%;
-		}
-	}
-	.fish {
-		position: absolute;
+		z-index: 1;
+        height: 45%;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
         img {
-            height: 15%;
-            width: 15%;
+            height: 100%;
         }
-	}
-	.right {
-		img {
-			transform: rotate(200deg);
-		}
-	}
-	.left {
-		img {
-			transform: rotate(20deg);
-		}
-	}
+    }
+    .fish {
+        background-image: url('images/FishBlue.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 5%;
+        width: 5%;
+        position: absolute;
+        overflow: hidden;
+    }
 }
 
 .waves {
-	width: 100%;
-	img {
-		width: 100%;
-	}
+    width: 100%;
+    img {
+        width: 100%;
+    }
 }
 
 @keyframes move {
-	0% {
-	}
-    100%{
+    0% {
+    }
+    100% {
         bottom: 70%;
         right: 70%;
     }
