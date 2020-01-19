@@ -5,7 +5,7 @@ const jumbotron = document.getElementById("jumbotron");
 const animation = (fish, x, y) => {
 
     const refreshrate = 1000 / 60;
-    const speed = 5;
+    const speed = 1;
     let pos = x;
     let posY = y
     const interval = window.setInterval(() => {
