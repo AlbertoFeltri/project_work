@@ -5,13 +5,13 @@ const jumbotron = document.getElementById("jumbotron");
 const animation = (fish, x, y) => {
 
     const refreshrate = 1000 / 60;
-    const speed = 1;
+    const speed = 5;
     let pos = x;
     let posY = y
     const interval = window.setInterval(() => {
         pos += speed;
         posY -= speed/3
-        if (pos > window.innerWidth - (window.innerWidth / 100) * 5 || posY < 0)  {
+        if (pos > window.innerWidth - (window.innerWidth / 100) * 5 -30 || posY < 0)  {
             fish.parentNode.removeChild(fish);
             generateFish();
             clearInterval(interval);
@@ -39,7 +39,6 @@ const generateXY = (fish, id) => {
     fish.style.left = x + "px";
 
     jumbotron.appendChild(fish);
-
     animation(fish, x, y)
 };
 
@@ -47,7 +46,7 @@ const generateFish = () => {
     let fish = document.createElement("div");
     fish.classList.add("fish");
     fish.id = "fish1";
-
+    
     generateXY(fish, 1);
 };
 
