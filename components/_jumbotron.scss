@@ -1,5 +1,5 @@
 .jumbotron {
-    height: 100vh;
+    height: calc(100vh - 15px);
     width: 100%;
     background-image: url("images/Back.svg");
     background-position: center;
@@ -10,7 +10,7 @@
     .hippo {
 		position: absolute;
 		z-index: 1;
-        height: 45%;
+        height: 60%;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
