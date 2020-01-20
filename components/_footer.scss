@@ -17,6 +17,7 @@
     margin-right: 10px;
     margin-left: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .mappa {
@@ -43,8 +44,12 @@
         @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
         $timing: 300ms;
-        $iconColor: #00B5F5;
-        $accent: #002A8F;
+
+        // $iconColor_instagram: #7e43c8;
+        // $accent_instagram: #feda80;
+        $iconColor2_instagram: #4b63d4;
+        $iconColor_facebook: #43609C;
+        $accent_facebook: #43609C;
         $bluefade: #0043E0;
         $gradient: #00B5F5;
 
@@ -106,10 +111,19 @@
               // // transition: all $timing ease-in;
             }
 
-            &:hover i {
+            &:hover .fa-instagram {
               @include transformScale(2);
-              color: $iconColor;
-              background: -webkit-linear-gradient($iconColor, $accent);
+              // color: $iconColor_instagram;
+              background-image: url(../images/Instagram_icon.png);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              transition: all $timing ease-in;
+            }
+
+            &:hover .fa-facebook {
+              @include transformScale(2);
+              color: $iconColor_facebook;
+              background: image(../images/Instagram_icon.png);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
               transition: all $timing ease-in;
@@ -129,16 +143,18 @@
   }
 
   .terza_colonna {
-    // background-color: lightcoral;
+    background-color: cyan;
     justify-content: center;
     text-align: center;
     border-radius: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
 
-    .instagram {
-      border-radius: 20px;
-    }
+  .quarta_colonna {
+    // background-color: green;
+    border-radius: 20px;
+    margin-left: 10px;
   }
 
   .textbox {
@@ -156,6 +172,8 @@
     text-align: center;
     border-radius: 20px;
     margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .contatti {

@@ -108,6 +108,7 @@ body {
   margin-right: 10px;
   margin-left: 10px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .footer .mappa {
@@ -192,12 +193,24 @@ body {
           transform: scale(2);
 }
 
-.footer .seconda_colonna .primo_riquadro .social-container .social-icons a:hover i {
+.footer .seconda_colonna .primo_riquadro .social-container .social-icons a:hover .fa-instagram {
   transform: scale(2);
   -ms-transform: scale(2);
   -webkit-transform: scale(2);
-  color: #00B5F5;
-  background: -webkit-linear-gradient(#00B5F5, #002A8F);
+  color: #7e43c8;
+  background: -webkit-linear-gradient(#7e43c8, #feda80, #4b63d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.footer .seconda_colonna .primo_riquadro .social-container .social-icons a:hover .fa-facebook {
+  transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  color: #43609C;
+  background: image();
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-transition: all 300ms ease-in;
@@ -214,6 +227,7 @@ body {
 }
 
 .footer .terza_colonna {
+  background-color: cyan;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -223,8 +237,9 @@ body {
   margin-bottom: 10px;
 }
 
-.footer .terza_colonna .instagram {
+.footer .quarta_colonna {
   border-radius: 20px;
+  margin-left: 10px;
 }
 
 .footer .textbox {
@@ -242,6 +257,8 @@ body {
   text-align: center;
   border-radius: 20px;
   margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .footer .contatti {
