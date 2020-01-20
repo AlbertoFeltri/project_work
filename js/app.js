@@ -2,19 +2,25 @@ const arguments = document.getElementsByClassName(".arguments argument");
 const jumbotron = document.getElementById("jumbotron");
 
 
-const animation = (fish, x, y) => {
+const animation = (fish, x, y, id) => {
 
     const refreshrate = 1000 / 60;
     const speed = 1;
+    const $opacity = 0.01
     let pos = x;
     let posY = y
+    let opacity = 0
     const interval = window.setInterval(() => {
         pos += speed;
-        posY -= speed/3
-        if (pos > window.innerWidth - (window.innerWidth / 100) * 5 -30 || posY < 0)  {
+        posY -= speed/4
+        opacity += $opacity
+        if (pos > window.innerWidth - (window.innerWidth / 100) * 5 -30 || posY < 15)  {
             fish.parentNode.removeChild(fish);
-            generateFish();
+            generateFish(id);
             clearInterval(interval);
+        }
+        if(opacity <= 1){
+            fish.style.opacity = opacity
         }
         fish.style.left = pos + "px";
         fish.style.top = posY + "px";
@@ -28,26 +34,31 @@ const generateXY = (fish, id) => {
     let x = generateNumber();
     let y = generateNumber();
 
-    while (x > window.innerWidth / 3) {
+    while (x > window.innerWidth / 4) {
         x = generateNumber();
     }
     while (y > window.innerHeight - 44 || y < 44) {
         y = generateNumber();
     }
-
+    if(id%2 == 0){
+        fish.style.backgroundImage = 'url(images/FishWhite.svg)'
+    } else {
+        fish.style.transform = 'rotate(-10deg)'
+    }
     fish.style.top = y + "px";
     fish.style.left = x + "px";
+    fish.style.opacity = 0;
 
     jumbotron.appendChild(fish);
-    animation(fish, x, y)
+    animation(fish, x, y, id)
 };
 
-const generateFish = () => {
+const generateFish = (id) => {
     let fish = document.createElement("div");
     fish.classList.add("fish");
     fish.id = "fish1";
     
-    generateXY(fish, 1);
+    generateXY(fish, id);
 };
 
 if (arguments[0]) {
@@ -55,6 +66,6 @@ if (arguments[0]) {
 	arguments[arguments.length - 1].style.marginRight = "40px";
 }
 
-for (let i = 0; i < 10; i++) {
-    generateFish();
+for (let i = 0; i < 20; i++) {
+    generateFish(i);
 }
