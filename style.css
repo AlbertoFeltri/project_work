@@ -1,3 +1,4 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 .navbar .titolo {
   padding-left: 15px;
   background-color: red;
@@ -114,25 +115,6 @@ body {
   margin: 10px;
 }
 
-.footer .primo_riquadro {
-  background-color: lightskyblue;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  border-radius: 20px;
-  margin-bottom: 10px;
-}
-
-.footer .secondo_riquadro {
-  background-color: lightgreen;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  border-radius: 20px;
-}
-
 .footer .seconda_colonna {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -144,8 +126,94 @@ body {
   margin-bottom: 10px;
 }
 
+.footer .seconda_colonna .primo_riquadro {
+  background-color: lightskyblue;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.footer .seconda_colonna .primo_riquadro .social-container {
+}
+
+.footer .seconda_colonna .primo_riquadro .social-container .social-container {
+  width: 400px;
+  margin: 35vh auto;
+  text-align: center;
+}
+
+.footer .seconda_colonna .primo_riquadro .social-container .social-icons {
+  padding: 0;
+  list-style: none;
+  zoom: 2;
+}
+
+.footer .seconda_colonna .primo_riquadro .social-container .social-icons .fa-facebook {
+  left: 25px;
+}
+
+.footer .seconda_colonna .primo_riquadro .social-container .social-icons li {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2em;
+}
+
+.footer .seconda_colonna .primo_riquadro .social-container .social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.footer .seconda_colonna .primo_riquadro .social-container .social-icons a {
+  display: inline-block;
+}
+
+.footer .seconda_colonna .primo_riquadro .social-container .social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: block;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.footer .seconda_colonna .primo_riquadro .social-container .social-icons a:hover:before {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.footer .seconda_colonna .primo_riquadro .social-container .social-icons a:hover i {
+  transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  color: #00B5F5;
+  background: -webkit-linear-gradient(#00B5F5, #002A8F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+
+.footer .seconda_colonna .secondo_riquadro {
+  background-color: lightgreen;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
 .footer .terza_colonna {
-  background-color: lightcoral;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -173,7 +241,7 @@ body {
           justify-content: center;
   text-align: center;
   border-radius: 20px;
-  margin: 10px;
+  margin-right: 10px;
 }
 
 .footer .contatti {
@@ -186,7 +254,6 @@ body {
           justify-content: center;
   border-radius: 20px;
   margin-right: 10px;
-  margin-left: 10px;
   margin-bottom: 10px;
 }
 
@@ -624,5 +691,23 @@ body {
   -webkit-box-flex: 9;
       -ms-flex: 9;
           flex: 9;
+}
+
+.flex10 {
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+}
+
+.flex11 {
+  -webkit-box-flex: 11;
+      -ms-flex: 11;
+          flex: 11;
+}
+
+.flex12 {
+  -webkit-box-flex: 12;
+      -ms-flex: 12;
+          flex: 12;
 }
 /*# sourceMappingURL=style.css.map */

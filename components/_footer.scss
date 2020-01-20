@@ -24,21 +24,6 @@
     margin: 10px;
   }
 
-  .primo_riquadro {
-    background-color: lightskyblue;
-    justify-content: center;
-    text-align: center;
-    border-radius: 20px;
-    margin-bottom: 10px;
-  }
-
-  .secondo_riquadro {
-    background-color: lightgreen;
-    justify-content: center;
-    text-align: center;
-    border-radius: 20px;
-  }
-
   .seconda_colonna {
     justify-content: center;
     text-align: center;
@@ -47,17 +32,111 @@
     margin-right: 10px;
     margin-bottom: 10px;
 
+    .primo_riquadro {
+      background-color: lightskyblue;
+      justify-content: center;
+      text-align: center;
+      border-radius: 20px;
+      margin-bottom: 10px;
+
+      .social-container {
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+        $timing: 300ms;
+        $iconColor: #00B5F5;
+        $accent: #002A8F;
+        $bluefade: #0043E0;
+        $gradient: #00B5F5;
+
+        @mixin transformScale($size: 1) {
+          transform: scale($size);
+          -ms-transform: scale($size);
+          -webkit-transform: scale($size);
+        }
+
+        .social-container {
+          width: 400px;
+          margin: 35vh auto;
+          text-align: center;
+        }
+
+        .social-icons {
+          padding: 0;
+          list-style: none;
+          // margin: 1em;
+          zoom: 2;
+
+          .fa-facebook {
+            left: 25px;
+          }
+
+          li {
+            display: inline-block;
+            // margin: 0.15em;
+            position: relative;
+            font-size: 1.2em;
+
+          }
+
+          i {
+            color: #fff;
+            position: absolute;
+            top: 21px;
+            left: 21px;
+            transition: all $timing ease-out;
+          }
+
+          a {
+            display: inline-block;
+
+            &:before {
+              @include transformScale();
+              content: " ";
+              width: 60px;
+              height: 60px;
+              border-radius: 100%;
+              display: block;
+              // background: linear-gradient(45deg, $iconColor, $accent);
+              transition: all $timing ease-in;
+            }
+
+            &:hover:before {
+              transform: scale(2);
+              // background: linear-gradient($iconColor, $accent);
+              // // transition: all $timing ease-in;
+            }
+
+            &:hover i {
+              @include transformScale(2);
+              color: $iconColor;
+              background: -webkit-linear-gradient($iconColor, $accent);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              transition: all $timing ease-in;
+            }
+          }
+
+        }
+      }
+    }
+
+    .secondo_riquadro {
+      background-color: lightgreen;
+      justify-content: center;
+      text-align: center;
+      border-radius: 20px;
+    }
   }
 
   .terza_colonna {
-    background-color: lightcoral;
+    // background-color: lightcoral;
     justify-content: center;
     text-align: center;
     border-radius: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
 
-    .instagram{
+    .instagram {
       border-radius: 20px;
     }
   }
@@ -76,7 +155,7 @@
     justify-content: center;
     text-align: center;
     border-radius: 20px;
-    margin: 10px;
+    margin-right: 10px;
   }
 
   .contatti {
@@ -85,7 +164,7 @@
     justify-content: center;
     border-radius: 20px;
     margin-right: 10px;
-    margin-left: 10px;
+    // margin-left: 10px;
     margin-bottom: 10px;
   }
 
