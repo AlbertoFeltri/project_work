@@ -34,161 +34,195 @@
     margin-bottom: 10px;
 
     .primo_riquadro {
-      background-color: lightskyblue;
+      // background-color: #A3DBEF;
       justify-content: center;
       text-align: center;
       border-radius: 20px;
       margin-bottom: 10px;
 
-      .social-container {
-        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+        //variables
+        // $basic-dark-color: #212121;
+        // $basic-light-color: #fff;
+        $fb-color: #3b5998;
+        // $tw-color: #00aced;
+        // $g-plus: #dd4b39;
+        // $dribbble: #ea4c89;
+        // $pinterest: #cb2027;
+        $insta: #bc2a8d;
+        // $in: #007bb6;
+        // $vimeo: #1ab7ea;
+        $border-radius: 10px;
+        $font-size: 25px;
 
-        $timing: 300ms;
-
-        // $iconColor_instagram: #7e43c8;
-        // $accent_instagram: #feda80;
-        $iconColor2_instagram: #4b63d4;
-        $iconColor_facebook: #43609C;
-        $accent_facebook: #43609C;
-        $bluefade: #0043E0;
-        $gradient: #00B5F5;
-
-        @mixin transformScale($size: 1) {
-          transform: scale($size);
-          -ms-transform: scale($size);
-          -webkit-transform: scale($size);
-        }
-
-        .social-container {
-          width: 400px;
-          margin: 35vh auto;
+        /*common styles !!!YOU DON'T NEED THEM */
+        .container {
+          margin: 60px auto 0px auto;
           text-align: center;
+
+          // h1 {
+          //   font: {
+          //     family: 'Roboto', sans-serif;
+          //     weight: 900;
+          //     size: 30px;
+          //   }
+
+            text-transform: uppercase;
+            // color: $basic-dark-color;
+            letter-spacing: 3px;
+
+            span {
+              display: inline-block;
+
+              &:before,
+              &:after {
+                content: "";
+                display: block;
+                width: 34px;
+                height: 2px;
+                // background-color: $basic-dark-color;
+                margin: 0px 0px 0px 2px;
+              }
+            }
+          }
         }
 
-        .social-icons {
-          padding: 0;
-          list-style: none;
-          // margin: 1em;
-          zoom: 2;
+        .effect {
+          width: 100%;
+          padding: 50px 0px 70px 0px;
+          // background-color: $basic-dark-color;
 
-          .fa-facebook {
-            left: 25px;
+          h2 {
+            // color: $basic-light-color;
+
+            font: {
+              family: 'Playfair Display', serif;
+              weight: 400;
+              size: 25px;
+            }
+
+            letter-spacing: 3px;
           }
 
-          li {
-            display: inline-block;
-            // margin: 0.15em;
-            position: relative;
-            font-size: 1.2em;
-
+          &:nth-child(2) {
+            margin-top: 50px;
           }
 
-          i {
-            color: #fff;
-            position: absolute;
-            top: 21px;
-            left: 21px;
-            transition: all $timing ease-out;
+          .buttons {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            background-color: #A3DBEF;
           }
 
           a {
-            display: inline-block;
 
-            &:before {
-              @include transformScale();
-              content: " ";
-              width: 60px;
-              height: 60px;
-              border-radius: 100%;
-              display: block;
-              // background: linear-gradient(45deg, $iconColor, $accent);
-              transition: all $timing ease-in;
-            }
-
-            &:hover:before {
-              transform: scale(2);
-              // background: linear-gradient($iconColor, $accent);
-              // // transition: all $timing ease-in;
-            }
-
-            &:hover .fa-instagram {
-              @include transformScale(2);
-              // color: $iconColor_instagram;
-              background-image: url(../images/Instagram_icon.png);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              transition: all $timing ease-in;
-            }
-
-            &:hover .fa-facebook {
-              @include transformScale(2);
-              color: $iconColor_facebook;
-              background: image(../images/Instagram_icon.png);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              transition: all $timing ease-in;
+            &:last-child {
+              margin-right: 0px;
             }
           }
+        }
 
+
+        .effect {
+
+          a {
+            text-decoration: none !important;
+            background-color: #A3DBEF;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: $border-radius;
+            margin-right: 20px;
+            font-size: $font-size;
+            overflow: hidden;
+            position: relative;
+
+            i {
+              position: relative;
+              z-index: 3;
+            }
+
+            &.fb {
+              background-color: $fb-color;
+            }
+
+            &.insta {
+              background-color: $insta;
+            }
+          }
+        }
+
+        /* jaques effect */
+        .effect.jaques {
+
+          a {
+            width: 200px;
+            height: 200px;
+            transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+
+            &:hover {
+              border-radius: 50%;
+            }
+          }
         }
       }
     }
 
-    .secondo_riquadro {
-      background-color: lightgreen;
-      justify-content: center;
-      text-align: center;
-      border-radius: 20px;
-    }
-  }
-
-  .terza_colonna {
-    background-color: cyan;
+  .secondo_riquadro {
+    background-color: lightgreen;
     justify-content: center;
     text-align: center;
     border-radius: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
   }
 
-  .quarta_colonna {
-    // background-color: green;
-    border-radius: 20px;
-    margin-left: 10px;
-  }
+.terza_colonna {
+  background-color: cyan;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
-  .textbox {
-    width: 85%;
-    height: auto;
-    margin: 10px;
-    // text-align: center;
-    // justify-content: center;
-    border-radius: 20px;
-  }
+.quarta_colonna {
+  // background-color: green;
+  border-radius: 20px;
+  margin-left: 10px;
+}
 
-  .logo_contatti {
-    background-color: #A3DBEF;
-    justify-content: center;
-    text-align: center;
-    border-radius: 20px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+.textbox {
+  width: 85%;
+  height: auto;
+  margin: 10px;
+  // text-align: center;
+  // justify-content: center;
+  border-radius: 20px;
+}
 
-  .contatti {
-    background-color: #F29100;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    margin-right: 10px;
-    // margin-left: 10px;
-    margin-bottom: 10px;
-  }
+.logo_contatti {
+  background-color: #A3DBEF;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
-  .align {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
+.contatti {
+  background-color: #F29100;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin-right: 10px;
+  // margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.align {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
