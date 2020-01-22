@@ -56,14 +56,15 @@ const generateXY = (fish, id) => {
 		while (x > window.innerWidth / 4) {
 			x = generateNumber();
 		}
-		while (y > window.innerHeight - 44 || y < 44) {
-			y = generateNumber();
-		}
 		fish.style.transform = "rotate(-10deg)";
 		if (id % 3 == 0) {
 			fish.style.transform = "rotate(0deg)";
 		}
 	}
+
+	while (y > window.innerHeight - 250 || y < 44) {
+			y = generateNumber();
+		}
 
 	if (id % 3 == 0) {
 		fish.style.backgroundImage = "url(images/FishWhite.svg)";
