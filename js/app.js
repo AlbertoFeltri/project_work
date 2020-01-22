@@ -20,7 +20,7 @@ const animation = (fish, x, y, id) => {
 			}
 			if (opacity <= 1) {
 				fish.style.opacity = opacity;
-            }
+			}
 			fish.style.left = pos + "px";
 			fish.style.top = posY + "px";
 		}, refreshrate);
@@ -51,37 +51,28 @@ const generateXY = (fish, id) => {
 		return Math.floor(Math.random() * 1000);
 	};
 	let x = generateNumber();
-    let y = generateNumber();
-	if (id % 2 == 0) {
-		while (x < (window.innerWidth / 4*3) ) {
-			x = generateNumber();
-		}
-		while (y > window.innerHeight - 44 || y < 44) {
-			y = generateNumber();
-		}
-		fish.style.transform = "rotate(-175deg)";
-
-	} else {
+	let y = generateNumber();
+	if (id % 2 != 0) {
 		while (x > window.innerWidth / 4) {
 			x = generateNumber();
 		}
 		while (y > window.innerHeight - 44 || y < 44) {
 			y = generateNumber();
 		}
+		fish.style.transform = "rotate(-10deg)";
+		if (id % 3 == 0) {
+			fish.style.transform = "rotate(0deg)";
+		}
+	}
 
-        fish.style.transform = "rotate(-10deg)";
-        if(id%3==0) {
-        fish.style.transform = "rotate(0deg)";
-            
-        }
-    }
-
-    if(id%3==0){
-        fish.style.backgroundImage = "url(images/FishWhite.svg)";
-        if(id%2==0){
-            fish.style.transform = "rotate(-165deg)";
-        }
-    } 
+	if (id % 3 == 0) {
+		fish.style.backgroundImage = "url(images/FishWhite.svg)";
+		if (id % 2 == 0) {
+			fish.style.transform = "rotate(-165deg)";
+		}
+	} else if (id % 2 == 0) {
+		fish.style.transform = "rotate(-175deg)";
+	}
 
 	fish.style.top = y + "px";
 	fish.style.left = x + "px";
