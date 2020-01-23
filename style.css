@@ -1,4 +1,3 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 .navbar .titolo {
   padding-left: 15px;
   background-color: red;
@@ -137,87 +136,122 @@ body {
   margin-bottom: 10px;
 }
 
-.footer .seconda_colonna .primo_riquadro .social-container {
+.footer .seconda_colonna .primo_riquadro .icone {
+  /*common styles !!!YOU DON'T NEED THEM */
+  /* jaques effect */
 }
 
-.footer .seconda_colonna .primo_riquadro .social-container .social-container {
-  width: 400px;
-  margin: 35vh auto;
+.footer .seconda_colonna .primo_riquadro .icone .container {
+  margin: 60px auto 0px auto;
   text-align: center;
 }
 
-.footer .seconda_colonna .primo_riquadro .social-container .social-icons {
-  padding: 0;
-  list-style: none;
-  zoom: 2;
+.footer .seconda_colonna .primo_riquadro .icone .container h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #212121;
+  letter-spacing: 3px;
 }
 
-.footer .seconda_colonna .primo_riquadro .social-container .social-icons .fa-facebook {
-  left: 25px;
-}
-
-.footer .seconda_colonna .primo_riquadro .social-container .social-icons li {
+.footer .seconda_colonna .primo_riquadro .icone .container h1 span {
   display: inline-block;
-  position: relative;
-  font-size: 1.2em;
 }
 
-.footer .seconda_colonna .primo_riquadro .social-container .social-icons i {
+.footer .seconda_colonna .primo_riquadro .icone .container h1 span:before, .footer .seconda_colonna .primo_riquadro .icone .container h1 span:after {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 2px;
+  background-color: #212121;
+  margin: 0px 0px 0px 2px;
+}
+
+.footer .seconda_colonna .primo_riquadro .icone .effect {
+  width: 100%;
+  padding: 50px 0px 70px 0px;
+  background-color: #212121;
+}
+
+.footer .seconda_colonna .primo_riquadro .icone .effect h2 {
   color: #fff;
-  position: absolute;
-  top: 21px;
-  left: 21px;
-  -webkit-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 3px;
 }
 
-.footer .seconda_colonna .primo_riquadro .social-container .social-icons a {
-  display: inline-block;
+.footer .seconda_colonna .primo_riquadro .icone .effect:nth-child(2) {
+  margin-top: 50px;
 }
 
-.footer .seconda_colonna .primo_riquadro .social-container .social-icons a:before {
-  transform: scale(1);
-  -ms-transform: scale(1);
-  -webkit-transform: scale(1);
-  content: " ";
+.footer .seconda_colonna .primo_riquadro .icone .effect:nth-child(2n+1) {
+  background-color: #fff;
+}
+
+.footer .seconda_colonna .primo_riquadro .icone .effect:nth-child(2n+1) h2 {
+  color: #212121;
+}
+
+.footer .seconda_colonna .primo_riquadro .icone .effect .buttons {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .seconda_colonna .primo_riquadro .icone .effect a:last-child {
+  margin-right: 0px;
+}
+
+.footer .seconda_colonna .primo_riquadro .icone .effect a {
+  text-decoration: none !important;
+  color: #fff;
   width: 60px;
   height: 60px;
-  border-radius: 100%;
-  display: block;
-  -webkit-transition: all 300ms ease-in;
-  transition: all 300ms ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  margin-right: 20px;
+  font-size: 25px;
+  overflow: hidden;
+  position: relative;
 }
 
-.footer .seconda_colonna .primo_riquadro .social-container .social-icons a:hover:before {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+.footer .seconda_colonna .primo_riquadro .icone .effect a i {
+  position: relative;
+  z-index: 3;
 }
 
-.footer .seconda_colonna .primo_riquadro .social-container .social-icons a:hover .fa-instagram {
-  transform: scale(2);
-  -ms-transform: scale(2);
-  -webkit-transform: scale(2);
-  color: #7e43c8;
-  background: -webkit-linear-gradient(#7e43c8, #feda80, #4b63d4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-transition: all 300ms ease-in;
-  transition: all 300ms ease-in;
+.footer .seconda_colonna .primo_riquadro .icone .effect a.fb {
+  background-color: #3b5998;
 }
 
-.footer .seconda_colonna .primo_riquadro .social-container .social-icons a:hover .fa-facebook {
-  transform: scale(2);
-  -ms-transform: scale(2);
-  -webkit-transform: scale(2);
-  color: #43609C;
-  background: image();
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-transition: all 300ms ease-in;
-  transition: all 300ms ease-in;
+.footer .seconda_colonna .primo_riquadro .icone .effect a.insta {
+  background-color: #bc2a8d;
 }
 
-.footer .seconda_colonna .secondo_riquadro {
+.footer .seconda_colonna .primo_riquadro .icone .effect.jaques a {
+  -webkit-transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+  transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+}
+
+.footer .seconda_colonna .primo_riquadro .icone .effect.jaques a:hover {
+  border-radius: 50%;
+}
+
+.footer .secondo_riquadro {
   background-color: lightgreen;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -226,7 +260,7 @@ body {
   border-radius: 20px;
 }
 
-.footer .terza_colonna {
+.terza_colonna {
   background-color: cyan;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -237,19 +271,19 @@ body {
   margin-bottom: 10px;
 }
 
-.footer .quarta_colonna {
+.quarta_colonna {
   border-radius: 20px;
   margin-left: 10px;
 }
 
-.footer .textbox {
+.textbox {
   width: 85%;
   height: auto;
   margin: 10px;
   border-radius: 20px;
 }
 
-.footer .logo_contatti {
+.logo_contatti {
   background-color: #A3DBEF;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -261,7 +295,7 @@ body {
   margin-bottom: 10px;
 }
 
-.footer .contatti {
+.contatti {
   background-color: #F29100;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -274,7 +308,7 @@ body {
   margin-bottom: 10px;
 }
 
-.footer .align {
+.align {
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
