@@ -1,42 +1,65 @@
 .mascotte {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+	.mascotte_title {
+		font-size: 40px;
+		text-align: center;
+	}
+	.text {
+		display: flex;
+		justify-content: center;
+	}
+	.barra {
+		background-color: #f29100;
+		border-radius: 10px;
+		max-height: 15px;
+	}
+	.mascotte_descrizione {
+		text-align: center;
+		padding-bottom: 20px;
+	}
 
-    .mascotte_title {
-        font-size: 40px;
-        text-align: center;
-
-    }
-
-    .mascotte_descrizione {
-        text-align: center;
-        padding-bottom: 20px;
-    }    
-    
-    .testi_mascotte {
-        padding-top: 10px;
-        padding-bottom: 10px;
-
-        .text_ippo {
-            width: 300px;
-            text-align: justify;
-            text-align: center;
+	.flex_row {
+		margin-left: 5%;
+		margin-right: 5%;
+		.ippo {
+			min-height: 250px;
+			border-radius: 10px;
+			flex: 3;
+            padding: 10px;
+            display: flex;
             justify-content: center;
-        }
+		}
+	}
 
-        .bottone {
-            margin-top: 20px;
-            width: 300px;
-            height: 30px;
-            border-radius: 20px;
-            background-color: #F29100;
+	.testi_mascotte {
+		margin-left: 5%;
+		margin-right: 5%;
+		.text_ippo {
+            text-align: justify;
+            flex: 3;
+			text-align: center;
+			justify-content: center;
+		}
 
-            .a {
-                text-decoration: none;
-                font-weight: bold;
-            }
+		.bottone {
+			margin-top: 20px;
+            flex: 3;
+            width: 98%;
+			height: 30px;
+			border-radius: 20px;
+			background-color: #f29100;
 
-            a:hover {
-                color: #0080FF;
-            }
-        }
-    }
+			.a {
+				text-decoration: none;
+				font-weight: bold;
+			}
+
+			a:hover {
+				color: #0080ff;
+			}
+		}
+	}
 }

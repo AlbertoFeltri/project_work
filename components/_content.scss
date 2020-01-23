@@ -5,8 +5,11 @@
 }
 
 body {
-    padding: 15px;
     height: 100vh;
+    background-color: #F29100;
+    div {
+        background-color: $secondary;
+    }
 }
 
 .head {
@@ -19,7 +22,6 @@ body {
 
 .descrizione {
     background-color: #A3DBEF;
-    border-radius: 20px;
 }
 
 .testo {

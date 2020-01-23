@@ -3,6 +3,8 @@
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: transparent;
+
 
     .text {
         display: flex;
@@ -19,10 +21,12 @@
         display: flex;
         width: 100%;
         position: relative;
+        background-color: transparent;
+
         // margin-top: 45px;
 
         .back {
-            z-index: -1;
+            z-index: 0;
             position: absolute;
             width: 100%;
             height: 100%;
@@ -43,33 +47,18 @@
 
         .arguments {
             display: flex;
+            z-index: 1;
             flex: 1;
-            margin-left: 64px;
-            margin-right: 64px;
-
-            .card {
-                // height: 450px;
-                // width: 400px;
-                border-radius: 10px;
-                flex: 3;
-                margin: 10px;
-                padding: 10px;
-                background-color: white;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-            }
-
+            margin-left: 18%;
+            margin-right: 18%;
             .argument {
                 min-height: 250px;
                 border-radius: 10px;
+                border: 1px solid;
                 flex: 3;
                 margin: 10px;
                 padding: 10px;
                 background-color: white;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
             }
         }
 
@@ -83,17 +72,17 @@
         .desc-arguments {
             display: flex;
             flex: 1;
-            margin-left: 64px;
-            margin-right: 64px;
+            margin-left: 18%;
+            margin-right: 18%;
 
             .argument {
                 min-height: 150px;
                 border-radius: 10px;
                 flex: 3;
                 // margin: 10px;
-                padding: 20px;
-                background-color: white;
+                padding: 25px;
                 color: $black;
+
             }
         }
     }
@@ -104,7 +93,8 @@
         height: 200px;
         justify-content: center;
         align-items: center;
-
+        background-color: $primary;
+        padding: 1%;
         .left {
             background-color: $secondary;
             min-width: 44px;
@@ -117,19 +107,22 @@
         .center {
             display: flex;
             flex-direction: row;
-            background-color: $primary;
+            background-color: $secondary;
             border-radius: 10px;
             height: 100%;
 
             .text {
+                background-color: transparent;
                 padding: 15px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
             }
 
             .link {
+                background-color: transparent;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -146,23 +139,5 @@
             height: 75%;
 
         }
-    }
-}
-
-.mascotte {
-    width: 100%;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-    .text {
-        display: flex;
-        justify-content: center;
-    }
-
-    .barra {
-        background-color: #F29100;
-        border-radius: 10px;
-        max-height: 15px;
     }
 }

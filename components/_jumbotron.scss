@@ -1,3 +1,7 @@
+.p-jumbotrom {
+    padding: 15px;
+    background-color: $primary;
+}
 .jumbotron {
     height: calc(100vh - 15px);
     width: 100%;
@@ -8,13 +12,15 @@
     border-radius: 20px;
 
     .hippo {
-		position: absolute;
+        position: absolute;
+        background-color: transparent;
 		z-index: 1;
         height: 80%;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         img {
+            background-color: transparent;
             height: 100%;
         }
     }
@@ -23,6 +29,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
+        background-color: transparent;
         height: 5%;
         width: 5%;
         position: absolute;
@@ -32,6 +39,7 @@
 
 .waves {
     width: 100%;
+    background-color: $secondary;
     img {
         width: 100%;
     }

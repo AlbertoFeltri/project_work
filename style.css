@@ -4,20 +4,13 @@
   color: green;
 }
 
-* {
-  margin: 0;
-  border: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .titolo {
   border-radius: 20px;
 }
 
-body {
-  margin-left: 15px;
-  margin-right: 15px;
+.p-jumbotrom {
+  padding: 15px;
+  background-color: #F29100;
 }
 
 .jumbotron {
@@ -32,6 +25,7 @@ body {
 
 .jumbotron .hippo {
   position: absolute;
+  background-color: transparent;
   z-index: 1;
   height: 80%;
   bottom: 0;
@@ -41,6 +35,7 @@ body {
 }
 
 .jumbotron .hippo img {
+  background-color: transparent;
   height: 100%;
 }
 
@@ -49,6 +44,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  background-color: transparent;
   height: 5%;
   width: 5%;
   position: absolute;
@@ -57,6 +53,7 @@ body {
 
 .waves {
   width: 100%;
+  background-color: #A3DBEF;
 }
 
 .waves img {
@@ -124,77 +121,55 @@ body {
   margin-top: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
+  /* jaques effect */
 }
 
 .footer .seconda_colonna .primo_riquadro {
-  background-color: lightskyblue;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
   border-radius: 20px;
   margin-bottom: 10px;
-}
-
-.footer .seconda_colonna .primo_riquadro .icone {
   /*common styles !!!YOU DON'T NEED THEM */
-  /* jaques effect */
 }
 
-.footer .seconda_colonna .primo_riquadro .icone .container {
+.footer .seconda_colonna .primo_riquadro .container {
   margin: 60px auto 0px auto;
   text-align: center;
-}
-
-.footer .seconda_colonna .primo_riquadro .icone .container h1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  font-size: 30px;
   text-transform: uppercase;
-  color: #212121;
   letter-spacing: 3px;
 }
 
-.footer .seconda_colonna .primo_riquadro .icone .container h1 span {
+.footer .seconda_colonna .primo_riquadro .container span {
   display: inline-block;
 }
 
-.footer .seconda_colonna .primo_riquadro .icone .container h1 span:before, .footer .seconda_colonna .primo_riquadro .icone .container h1 span:after {
+.footer .seconda_colonna .primo_riquadro .container span:before, .footer .seconda_colonna .primo_riquadro .container span:after {
   content: "";
   display: block;
   width: 34px;
   height: 2px;
-  background-color: #212121;
   margin: 0px 0px 0px 2px;
 }
 
-.footer .seconda_colonna .primo_riquadro .icone .effect {
+.footer .seconda_colonna .effect {
   width: 100%;
   padding: 50px 0px 70px 0px;
-  background-color: #212121;
 }
 
-.footer .seconda_colonna .primo_riquadro .icone .effect h2 {
-  color: #fff;
+.footer .seconda_colonna .effect h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-size: 25px;
   letter-spacing: 3px;
 }
 
-.footer .seconda_colonna .primo_riquadro .icone .effect:nth-child(2) {
+.footer .seconda_colonna .effect:nth-child(2) {
   margin-top: 50px;
 }
 
-.footer .seconda_colonna .primo_riquadro .icone .effect:nth-child(2n+1) {
-  background-color: #fff;
-}
-
-.footer .seconda_colonna .primo_riquadro .icone .effect:nth-child(2n+1) h2 {
-  color: #212121;
-}
-
-.footer .seconda_colonna .primo_riquadro .icone .effect .buttons {
+.footer .seconda_colonna .effect .buttons {
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,15 +177,16 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #A3DBEF;
 }
 
-.footer .seconda_colonna .primo_riquadro .icone .effect a:last-child {
+.footer .seconda_colonna .effect a:last-child {
   margin-right: 0px;
 }
 
-.footer .seconda_colonna .primo_riquadro .icone .effect a {
+.footer .seconda_colonna .effect a {
   text-decoration: none !important;
-  color: #fff;
+  background-color: #A3DBEF;
   width: 60px;
   height: 60px;
   display: -webkit-box;
@@ -222,36 +198,38 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-right: 20px;
-  font-size: 25px;
+  font-size: 15px;
   overflow: hidden;
   position: relative;
 }
 
-.footer .seconda_colonna .primo_riquadro .icone .effect a i {
+.footer .seconda_colonna .effect a i {
   position: relative;
   z-index: 3;
 }
 
-.footer .seconda_colonna .primo_riquadro .icone .effect a.fb {
+.footer .seconda_colonna .effect a.fb {
   background-color: #3b5998;
 }
 
-.footer .seconda_colonna .primo_riquadro .icone .effect a.insta {
+.footer .seconda_colonna .effect a.insta {
   background-color: #bc2a8d;
 }
 
-.footer .seconda_colonna .primo_riquadro .icone .effect.jaques a {
+.footer .seconda_colonna .effect.jaques a {
+  width: 200px;
+  height: 200px;
   -webkit-transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
   transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
 }
 
-.footer .seconda_colonna .primo_riquadro .icone .effect.jaques a:hover {
+.footer .seconda_colonna .effect.jaques a:hover {
   border-radius: 50%;
 }
 
-.footer .secondo_riquadro {
+.secondo_riquadro {
   background-color: lightgreen;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -326,8 +304,12 @@ body {
 }
 
 body {
-  padding: 15px;
   height: 100vh;
+  background-color: #F29100;
+}
+
+body div {
+  background-color: #A3DBEF;
 }
 
 .head {
@@ -340,7 +322,6 @@ body {
 
 .descrizione {
   background-color: #A3DBEF;
-  border-radius: 20px;
 }
 
 .testo {
@@ -353,9 +334,33 @@ body {
   margin-top: 15px;
 }
 
+.mascotte {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .mascotte .mascotte_title {
   font-size: 40px;
   text-align: center;
+}
+
+.mascotte .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mascotte .barra {
+  background-color: #f29100;
+  border-radius: 10px;
+  max-height: 15px;
 }
 
 .mascotte .mascotte_descrizione {
@@ -363,26 +368,36 @@ body {
   padding-bottom: 20px;
 }
 
-.mascotte .ippo {
-  
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.mascotte .flex_row {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.mascotte .flex_row .ippo {
+  min-height: 250px;
+  border-radius: 10px;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .mascotte .testi_mascotte {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .mascotte .testi_mascotte .text_ippo {
-  width: 300px;
   text-align: justify;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -391,10 +406,13 @@ body {
 
 .mascotte .testi_mascotte .bottone {
   margin-top: 20px;
-  width: 300px;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  width: 98%;
   height: 30px;
   border-radius: 20px;
-  background-color: #F29100;
+  background-color: #f29100;
 }
 
 .mascotte .testi_mascotte .bottone .a {
@@ -403,7 +421,7 @@ body {
 }
 
 .mascotte .testi_mascotte .bottone a:hover {
-  color: #0080FF;
+  color: #0080ff;
 }
 
 .arguments {
@@ -413,6 +431,7 @@ body {
           justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  background-color: transparent;
 }
 
 .arguments .text {
@@ -436,10 +455,11 @@ body {
   display: flex;
   width: 100%;
   position: relative;
+  background-color: transparent;
 }
 
 .arguments .container .back {
-  z-index: -1;
+  z-index: 0;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -464,46 +484,24 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 1;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-left: 64px;
-  margin-right: 64px;
-}
-
-.arguments .container .arguments .card {
-  border-radius: 10px;
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
-  margin: 10px;
-  padding: 10px;
-  background-color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+  margin-left: 18%;
+  margin-right: 18%;
 }
 
 .arguments .container .arguments .argument {
   min-height: 250px;
   border-radius: 10px;
+  border: 1px solid;
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
   margin: 10px;
   padding: 10px;
   background-color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
 }
 
 .arguments .container-desc {
@@ -521,8 +519,8 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-left: 64px;
-  margin-right: 64px;
+  margin-left: 18%;
+  margin-right: 18%;
 }
 
 .arguments .container-desc .desc-arguments .argument {
@@ -531,8 +529,7 @@ body {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
-  padding: 20px;
-  background-color: white;
+  padding: 25px;
   color: #000000;
 }
 
@@ -551,6 +548,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #F29100;
+  padding: 1%;
 }
 
 .arguments .download .left {
@@ -570,12 +569,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #F29100;
+  background-color: #A3DBEF;
   border-radius: 10px;
   height: 100%;
 }
 
 .arguments .download .center .text {
+  background-color: transparent;
   padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -593,6 +593,7 @@ body {
 }
 
 .arguments .download .center .link {
+  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -615,30 +616,6 @@ body {
   border-bottom-right-radius: 10px;
   margin-left: 10px;
   height: 75%;
-}
-
-.mascotte {
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.mascotte .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.mascotte .barra {
-  background-color: #F29100;
-  border-radius: 10px;
-  max-height: 15px;
 }
 
 .flex_row {
