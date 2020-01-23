@@ -9,42 +9,8 @@
     .mascotte_descrizione {
         text-align: center;
         padding-bottom: 20px;
-    }
-
-    //.a_posizione {}
-
-
-    .ippo {
-        width: 300px;
-        height: 320px;
-        border-radius: 20px;
-        text-align: center;
-        justify-content: center;
-        display: flex;
-        background-color: $secondary;
-
-        .m_img {
-            width: 250px;
-            padding: 30px;
-        }
-
-        .m_img_gufo {
-            width: 200px;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        .m_img_rana {
-            width: 200px;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-    }
-
+    }    
+    
     .testi_mascotte {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -73,7 +39,4 @@
             }
         }
     }
-
-    // .Gufo {}
-
 }
