@@ -1,5 +1,9 @@
-.footer {
-  height: 300px;
+footer{
+  height: 600px;
+  // background-image: url(../images/Onde.svg);
+  // div{
+  //   background-color: red;
+  // }
 
   .logo {
     // background-color: #F29100;
@@ -10,7 +14,7 @@
   }
 
   .container-mappa {
-    background-color: #F29100;
+    // background-color: #F29100;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -19,14 +23,14 @@
     margin-top: 10px;
     margin-bottom: 10px;
 
-    .background_color {
-      background-color: #F29100;
+    // .background_color {
+    //   background-color: #F29100;
 
-      .mappa {
-        border-radius: 20px;
-        margin: 10px;
-      }
-    }
+    //   .mappa {
+    //     border-radius: 20px;
+    //     margin: 10px;
+    //   }
+    // }
 
     .mappa {
       border-radius: 20px;
@@ -47,7 +51,6 @@
       text-align: center;
       border-radius: 20px;
       margin-bottom: 10px;
-      background-color: #F29100;
 
       .container {
         margin: 60px auto 0px auto;
@@ -90,7 +93,7 @@
         .buttons {
           display: flex;
           justify-content: center;
-          background-color: #A3DBEF;
+          // background-color: #A3DBEF;
         }
 
         a {
@@ -149,11 +152,12 @@
       }
     }
 
-    .background_color {
-      background-color: #F29100;
-    }
+    // .background_color {
+    //   background-color: #F29100;
+    // }
 
     .secondo_riquadro {
+      margin-top: 10px;
       justify-content: center;
       text-align: center;
       border-radius: 20px;
@@ -161,7 +165,7 @@
   }
 
   .terza_colonna {
-    background-color: cyan;
+    // background-color: cyan;
     justify-content: center;
     text-align: center;
     border-radius: 20px;
@@ -170,8 +174,32 @@
   }
 
   .quarta_colonna {
+    justify-content: center;
+    text-align: center;
     border-radius: 20px;
     margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .logo_contatti {
+      // background-color: #A3DBEF;
+      justify-content: center;
+      text-align: center;
+      margin-right: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .contatti {
+      // background-color: #F29100;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      // margin-left: 10px;
+      margin-bottom: 10px;
+    }
+  
   }
 
   .textbox {
@@ -179,26 +207,6 @@
     height: auto;
     margin: 10px;
     border-radius: 20px;
-  }
-
-  .logo_contatti {
-    background-color: #A3DBEF;
-    justify-content: center;
-    text-align: center;
-    border-radius: 20px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .contatti {
-    background-color: #F29100;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    margin-right: 10px;
-    // margin-left: 10px;
-    margin-bottom: 10px;
   }
 
   .align {

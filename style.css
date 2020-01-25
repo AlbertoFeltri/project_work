@@ -78,11 +78,11 @@
   }
 }
 
-.footer {
-  height: 300px;
+footer {
+  height: 600px;
 }
 
-.footer .logo {
+footer .logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -91,8 +91,7 @@
   margin: 10px;
 }
 
-.footer .container-mappa {
-  background-color: #F29100;
+footer .container-mappa {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -106,21 +105,12 @@
   margin-bottom: 10px;
 }
 
-.footer .container-mappa .background_color {
-  background-color: #F29100;
-}
-
-.footer .container-mappa .background_color .mappa {
+footer .container-mappa .mappa {
   border-radius: 20px;
   margin: 10px;
 }
 
-.footer .container-mappa .mappa {
-  border-radius: 20px;
-  margin: 10px;
-}
-
-.footer .seconda_colonna {
+footer .seconda_colonna {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -131,28 +121,27 @@
   margin-bottom: 10px;
 }
 
-.footer .seconda_colonna .primo_riquadro {
+footer .seconda_colonna .primo_riquadro {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
   border-radius: 20px;
   margin-bottom: 10px;
-  background-color: #F29100;
 }
 
-.footer .seconda_colonna .primo_riquadro .container {
+footer .seconda_colonna .primo_riquadro .container {
   margin: 60px auto 0px auto;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
 
-.footer .seconda_colonna .primo_riquadro .container span {
+footer .seconda_colonna .primo_riquadro .container span {
   display: inline-block;
 }
 
-.footer .seconda_colonna .primo_riquadro .container span:before, .footer .seconda_colonna .primo_riquadro .container span:after {
+footer .seconda_colonna .primo_riquadro .container span:before, footer .seconda_colonna .primo_riquadro .container span:after {
   content: "";
   display: block;
   width: 34px;
@@ -160,36 +149,35 @@
   margin: 0px 0px 0px 2px;
 }
 
-.footer .seconda_colonna .primo_riquadro .effect {
+footer .seconda_colonna .primo_riquadro .effect {
   width: 100%;
 }
 
-.footer .seconda_colonna .primo_riquadro .effect h2 {
+footer .seconda_colonna .primo_riquadro .effect h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-size: 25px;
   letter-spacing: 3px;
 }
 
-.footer .seconda_colonna .primo_riquadro .effect:nth-child(2) {
+footer .seconda_colonna .primo_riquadro .effect:nth-child(2) {
   margin-top: 50px;
 }
 
-.footer .seconda_colonna .primo_riquadro .effect .buttons {
+footer .seconda_colonna .primo_riquadro .effect .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #A3DBEF;
 }
 
-.footer .seconda_colonna .primo_riquadro .effect a:last-child {
+footer .seconda_colonna .primo_riquadro .effect a:last-child {
   margin-right: 0px;
 }
 
-.footer .seconda_colonna .primo_riquadro .effect a {
+footer .seconda_colonna .primo_riquadro .effect a {
   text-decoration: none !important;
   background-color: #A3DBEF;
   width: 60px;
@@ -210,37 +198,34 @@
   position: relative;
 }
 
-.footer .seconda_colonna .primo_riquadro .effect a i {
+footer .seconda_colonna .primo_riquadro .effect a i {
   position: relative;
   z-index: 3;
 }
 
-.footer .seconda_colonna .primo_riquadro .effect a.fb {
+footer .seconda_colonna .primo_riquadro .effect a.fb {
   background-color: #3b5998;
   color: white;
 }
 
-.footer .seconda_colonna .primo_riquadro .effect a.insta {
+footer .seconda_colonna .primo_riquadro .effect a.insta {
   background-color: #bc2a8d;
   color: white;
 }
 
-.footer .seconda_colonna .primo_riquadro .effect.jaques a {
+footer .seconda_colonna .primo_riquadro .effect.jaques a {
   width: 70px;
   height: 70px;
   -webkit-transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
   transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
 }
 
-.footer .seconda_colonna .primo_riquadro .effect.jaques a:hover {
+footer .seconda_colonna .primo_riquadro .effect.jaques a:hover {
   border-radius: 50%;
 }
 
-.footer .seconda_colonna .background_color {
-  background-color: #F29100;
-}
-
-.footer .seconda_colonna .secondo_riquadro {
+footer .seconda_colonna .secondo_riquadro {
+  margin-top: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -248,8 +233,7 @@
   border-radius: 20px;
 }
 
-.footer .terza_colonna {
-  background-color: cyan;
+footer .terza_colonna {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -259,44 +243,47 @@
   margin-bottom: 10px;
 }
 
-.footer .quarta_colonna {
-  border-radius: 20px;
-  margin-left: 10px;
-}
-
-.footer .textbox {
-  width: 85%;
-  height: auto;
-  margin: 10px;
-  border-radius: 20px;
-}
-
-.footer .logo_contatti {
-  background-color: #A3DBEF;
+footer .quarta_colonna {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
   border-radius: 20px;
+  margin-left: 10px;
   margin-right: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.footer .contatti {
-  background-color: #F29100;
+footer .quarta_colonna .logo_contatti {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer .quarta_colonna .contatti {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 20px;
   margin-right: 10px;
   margin-bottom: 10px;
 }
 
-.footer .align {
+footer .textbox {
+  width: 85%;
+  height: auto;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+footer .align {
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -315,7 +302,6 @@
 
 body {
   height: 100vh;
-  background-color: #F29100;
 }
 
 body div {
